@@ -1,7 +1,10 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="background">
+    <a-row :gutter="12" style="margin: 12px">
+      <a-col :span="24">
+
+      </a-col>
+    </a-row>
   </div>
 </template>
 
@@ -14,5 +17,19 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
     HelloWorld,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  test: string = 'testing';
+  change(){
+    this.test = 'another'
+  }
+
+}
 </script>
+<style>
+.background{
+  background-image: url("../assets/img0.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+</style>

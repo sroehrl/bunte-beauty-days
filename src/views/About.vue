@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="m-5">
+    <h1 class="text-primary">Beauty days 2021</h1>
+    <a-skeleton />
   </div>
 </template>

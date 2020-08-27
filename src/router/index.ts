@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 
+
 Vue.use(VueRouter)
 
   const routes: Array<RouteConfig> = [
@@ -10,6 +11,15 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
+    {
+      path: '/aussteller',
+      name: 'Aussteller',
+      component: () => import('../views/Aussteller.vue')
+    },{
+      path: '/event',
+      name: 'Event',
+      component: () => import('../views/About.vue')
+    },
   {
     path: '/about',
     name: 'About',
